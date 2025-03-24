@@ -2,8 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_QtHdInfo.h"
-#include <QNetworkInterface>
-#include "Hardinfo.h"
+#include "HardInfo.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class QtHdInfoClass; };
@@ -16,8 +15,8 @@ class QtHdInfo : public QMainWindow
 public:
     QtHdInfo(QWidget *parent = nullptr);
     ~QtHdInfo();
-    QString getNetInfo();
-    
+       
 private:
     Ui::QtHdInfoClass *ui;
+    HardInfo *myGetHardInfo;
 };

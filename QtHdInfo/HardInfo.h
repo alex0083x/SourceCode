@@ -1,6 +1,6 @@
-#pragma once
-
+﻿#pragma once
 #include <QObject>
+#include <QNetworkInterface>
 
 class HardInfo  : public QObject
 {
@@ -9,4 +9,5 @@ class HardInfo  : public QObject
 public:
 	HardInfo(QObject *parent);
 	~HardInfo();
+	QString getNetInfo();
 };
